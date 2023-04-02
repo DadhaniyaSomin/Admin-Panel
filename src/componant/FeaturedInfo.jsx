@@ -1,13 +1,14 @@
 import React from 'react'
-
+import { ArrowDownward } from '@mui/icons-material'
 const FeaturedInfo = () => {
   return (
     <div className='featured'>
        <div className="featuredItem">
-         <div className="featureMoneyContainer">
-            <span className="featuredMoney">$2.00</span>
-            <span className="featuredMoney">$2.23</span>
-         </div>
+          <span className='featuredTitle'> Reavanue</span>
+          <div className='featuredMoneyContainer'>
+               <span className='featuredMoney'>$100</span>
+               <span className='featuredMoneyRate'>$300 <ArrowDownward /></span>
+          </div>
        </div>
     </div>
   )
