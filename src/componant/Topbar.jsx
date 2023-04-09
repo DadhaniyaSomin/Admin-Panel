@@ -3,14 +3,15 @@ import "../style.css";
 import MarkEmailUnreadIcon from "@mui/icons-material/MarkEmailUnread";
 import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
 import TranslateIcon from "@mui/icons-material/Translate";
+import AdminImg from '../Images/c41eb50942cc495096767ede7ddc6d8f.png'
 const Topbar = () => {
   return (
     <div className="topbar">
       <div className="topbarWrapper">
         <div className="topLeft">
-          <span className="logo"> ADMIN PANEL</span>
+          <span className="logo"> Somin's Blog</span>
         </div>
-        <div className="topRight">
+        {/* <div className="topRight">
           <div className="topbarIconContainer">
             <MarkEmailUnreadIcon />
             <span className="topIconBag">2</span>
@@ -26,7 +27,7 @@ const Topbar = () => {
             alt="avtar"
             className="topAvatar"
           ></img>
-        </div>
+        </div> */}
       </div>
     </div>
   );

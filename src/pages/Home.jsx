@@ -7,6 +7,8 @@ const Home = () => {
       <Layout>
         <div className="home">
           <FeaturedInfo />
+          <FeaturedInfo />
+          <FeaturedInfo />
         </div>
       </Layout>
     </>

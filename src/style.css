@@ -1,8 +1,25 @@
 /* //all js in one file */
+:root {
+  --bg-color: white;
+  --text-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: black;
+    --text-color: white;
+  }
+}
+
 body {
-font-family: 'Libre Franklin', sans-serif;
-font-family: 'Space Grotesk', sans-serif;
-font-family: 'Work Sans', sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 .chart {
   margin: 20px;
@@ -19,6 +36,9 @@ font-family: 'Work Sans', sans-serif;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  border-radius: 21px;
+  background-color: #060606;
+  margin: 22px;
 }
 
 .featuredItem {
@@ -43,7 +63,7 @@ font-family: 'Work Sans', sans-serif;
 
 .featuredMoney {
   font-size: 30px;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .featuredMoneyRate {
@@ -69,10 +89,10 @@ font-family: 'Work Sans', sans-serif;
 
 .sidebar {
   height: calc(100vh - 50px);
-  background-color: rgb(251, 251, 255);
   position: sticky;
   top: 50px;
   width: 15%;
+  background-color: #100f0f;
 }
 .sidebarTag{
   padding-left: 14px;
@@ -90,8 +110,11 @@ font-family: 'Work Sans', sans-serif;
 
 .sidebarTitle {
   font-size: 23px;
-  color: rgb(0, 0, 0);
-  margin:0px
+  color: #f9fbf9;
+  margin:0px;
+  padding-left: 14px;
+  padding-top: 15px;
+
 }
 
 .sidebarList {
@@ -100,16 +123,17 @@ font-family: 'Work Sans', sans-serif;
 }
 
 .sidebarListItem {
-  padding: -7px;
   cursor: pointer;
   display: flex;
   align-items: center;
   border-radius: 10px;
+  padding: 3px !important;
+  margin: 3px;
 }
 
 .sidebarListItem.active,
 .sidebarListItem:hover {
-  background-color: rgb(240, 240, 255);
+  color : #A24502
 }
 
 .sidebarIcon {
@@ -119,11 +143,12 @@ font-family: 'Work Sans', sans-serif;
 
 .topbar {
   width: 100%;
-  height: 50px;
-  background-color: white;
+  height: 10%;
   position: sticky;
   top: 0;
   z-index: 999;
+  background-color: #100f0f;
+;
 }
 
 .topbarWrapper {
@@ -135,10 +160,9 @@ font-family: 'Work Sans', sans-serif;
 }
 
 .logo {
-  font-weight: bolder !important;
-  font-weight: 900;
+  margin-left: 13px;
   font-size: 30px;
-  color: darkblue;
+  color: rgb(243, 243, 248);
   cursor: pointer;
 }
 
@@ -185,7 +209,7 @@ font-family: 'Work Sans', sans-serif;
 
 .widgetLgTitle {
   font-size: 22px;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .widgetLgTable {
@@ -200,7 +224,7 @@ font-family: 'Work Sans', sans-serif;
 .widgetLgUser {
   display: flex;
   align-items: center;
-  font-weight: 600;
+  /* font-weight: 600; */
 }
 
 .widgetLgImg {
@@ -213,7 +237,7 @@ font-family: 'Work Sans', sans-serif;
 
 .widgetLgDate,
 .widgetLgAmount {
-  font-weight: 300;
+  /* font-weight: 300; */
 }
 
 .widgetLgButton {
@@ -297,9 +321,11 @@ font-family: 'Work Sans', sans-serif;
   margin-right: 5px;
 }
 
-/* .home {
-  flex: 4;
-} */
+.home {
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+}
 
 .homeWidgets {
   display: flex;
@@ -756,7 +782,6 @@ font-family: 'Work Sans', sans-serif;
 
 .container {
   display: flex;
-  margin-top: 10px;
 }
 
 .link {
