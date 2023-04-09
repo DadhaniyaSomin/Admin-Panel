@@ -6,9 +6,8 @@ const Home = () => {
     <>
       <Layout>
         <div className="home">
-          <FeaturedInfo />
-          <FeaturedInfo />
-          <FeaturedInfo />
+          <FeaturedInfo total={50} title="Total Blog Posts" />
+          <FeaturedInfo total={5} title="Total Blog Catgories"/>
         </div>
       </Layout>
     </>

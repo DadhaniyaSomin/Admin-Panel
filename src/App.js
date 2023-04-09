@@ -7,14 +7,19 @@ import {
   createRoutesFromElements,
   Route,
 } from "react-router-dom";
+import BlogList from "./componant/BlogList";
+import Blog from "./pages/Blog";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
+    <>
     <Route
       path="/"
       element={<Home />}
       errorElement={<p> Error Occured </p>}
     ></Route>
+    <Route path="/blog" element={<Blog />} > </Route>
+    </>
   )
 );
 
