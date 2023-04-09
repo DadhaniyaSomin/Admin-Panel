@@ -1,6 +1,8 @@
 /* //all js in one file */
 body {
-  font-family: 'Inter', sans-serif;
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Space Grotesk', sans-serif;
+font-family: 'Work Sans', sans-serif;
 }
 .chart {
   margin: 20px;
@@ -133,7 +135,8 @@ body {
 }
 
 .logo {
-  font-weight: bold;
+  font-weight: bolder !important;
+  font-weight: 900;
   font-size: 30px;
   color: darkblue;
   cursor: pointer;
@@ -293,9 +296,10 @@ body {
   font-size: 16px !important;
   margin-right: 5px;
 }
-.home {
+
+/* .home {
   flex: 4;
-}
+} */
 
 .homeWidgets {
   display: flex;

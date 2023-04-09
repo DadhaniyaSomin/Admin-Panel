@@ -1,17 +1,23 @@
-import React from 'react';
-import Topbar from './componant/Topbar';
-import Sidebar from './componant/Sidebar';
-import Home from './pages/Home';
-import './style.css';
+import React from "react";
+import "./style.css";
+import Home from "./pages/Home";
+import {
+  RouterProvider,
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route
+      path="/"
+      element={<Home />}
+      errorElement={<p> Error Occured </p>}
+    ></Route>
+  )
+);
 
 export default function App() {
-  return (
-    <div>
-      <Topbar />
-      <div className="container">
-          <Sidebar></Sidebar>
-          <Home />
-      </div>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
